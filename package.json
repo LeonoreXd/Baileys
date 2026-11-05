@@ -1,0 +1,105 @@
+{
+  "name": "@leonoremods/baileys",
+  "version": "1.2.9",
+  "description": "Baileys WhatsApp API modification by LeonoreMods",
+  "keywords": [
+    "whatsapp",
+    "whatsapp-web",
+    "whatsapp-api",
+    "baileys",
+    "multi-device",
+    "wasm",
+    "rust",
+    "automation",
+    "md",
+    "newsletter",
+    "rich-message",
+    "media",
+    "websocket",
+    "reconnect",
+    "message-queue"
+  ],
+  "homepage": "https://www.npmjs.com/package/@leonoremods/baileys",
+  "license": "MIT",
+  "author": "LeonoreMods",
+  "main": "src/index.js",
+  "files": [
+    "src/**/*",
+    "WAProto/**/*",
+    "engine-requirements.js",
+    "scripts/**/*"
+  ],
+  "scripts": {
+    "format": "prettier --write \"src/**/*.{js,json,md}\"",
+    "lint": "node ./scripts/check-syntax.js",
+    "lint:fix": "npm run format && npm run lint",
+    "test": "jest --runInBand",
+    "preinstall": "node ./engine-requirements.js",
+    "prepublishOnly": "npm run lint && npm test"
+  },
+  "dependencies": {
+    "@adiwajshing/keyed-db": "^0.2.4",
+    "@cacheable/node-cache": "^3.0.1",
+    "@hapi/boom": "^10.0.1",
+    "async-mutex": "^0.5.0",
+    "cache-manager": "^7.2.8",
+    "libphonenumber-js": "^1.13.3",
+    "lru-cache": "^11.5.0",
+    "music-metadata": "^11.12.3",
+    "p-queue": "^9.3.0",
+    "pino": "^10.3.1",
+    "protobufjs": "^7.6.1",
+    "ws": "^8.21.0",
+    "whatsapp-rust-bridge": "0.5.4",
+    "jimp": "^1.6.0",
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.31.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^22.0.0",
+    "@types/ws": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.59.4",
+    "@typescript-eslint/parser": "^8.59.4",
+    "@whiskeysockets/eslint-config": "^1.0.0",
+    "eslint": "^9",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.4.1",
+    "jest": "^30.0.5",
+    "jimp": "^1.6.0",
+    "jiti": "^2.4.2",
+    "json": "^11.0.0",
+    "link-preview-js": "^3.2.0",
+    "pino-pretty": "^13.1.1",
+    "prettier": "^3.5.3",
+    "protobufjs-cli": "^1.3.1",
+    "qrcode-terminal": "^0.12.0",
+    "ts-jest": "^29.4.11",
+    "tsx": "^4.22.3"
+  },
+  "peerDependencies": {
+    "audio-decode": "^2.1.3",
+    "link-preview-js": "^3.2.0",
+    "@img/sharp-wasm32": "^0.35.1",
+    "sharp": "^0.32.5"
+  },
+  "peerDependenciesMeta": {
+    "audio-decode": {
+      "optional": true
+    },
+    "link-preview-js": {
+      "optional": true
+    },
+    "@img/sharp-wasm32": {
+      "optional": true
+    },
+    "sharp": {
+      "optional": true
+    }
+  },
+  "packageManager": "yarn@4.9.2",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
