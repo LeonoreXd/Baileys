@@ -15,7 +15,7 @@ A high-performance WhatsApp Web library built on [Baileys](https://github.com/Wh
 |---|---|
 | 📦 **Package** | `@leonoremods/baileys` |
 | 🏷️ **Version** | `1.2.9` |
-| 💬 **Telegram** | [t.me/FoxsSql](https://t.me/FoxsSql) |
+| 💬 **Telegram** | [t.me/LeonoreMods](https://t.me/LeonoreMods) |
 | 🐙 **GitHub** | [github.com/LeonoreMods](https://github.com/LeonoreMods) |
 
 ---
